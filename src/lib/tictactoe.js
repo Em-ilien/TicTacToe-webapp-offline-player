@@ -21,7 +21,9 @@ export class TicTacToe {
 	}
 
 	isTheGameIsFinished() {
-		return this.isPlayerWinner(this.PLAYER_1_SYMBOL) || this.isPlayerWinner(this.PLAYER_2_SYMBOL);
+		if (this.isPlayerWinner(this.PLAYER_1_SYMBOL) || this.isPlayerWinner(this.PLAYER_2_SYMBOL))
+			return true;
+		return this.cells.size === this.ROWS.length * this.COLUMNS.length;
 	}
 
 	isPlayerWinner(player) {

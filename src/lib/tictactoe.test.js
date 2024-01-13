@@ -174,4 +174,19 @@ describe('TicTacToe', () => {
 		expect(ticTacToe.isTheGameIsFinished()).toBeTruthy();
 		expect(ticTacToe.isPlayerWinner('O')).toBeTruthy();
 	});
+
+	test('theGameIsFinishedMethodShouldReturnTrueWhenAllCellsArePlayedEvenIfThereIsNoWinner', () => {
+		ticTacToe.play('A1');
+		ticTacToe.play('B1');
+		ticTacToe.play('A2');
+		ticTacToe.play('B2');
+		ticTacToe.play('B3');
+		ticTacToe.play('A3');
+		ticTacToe.play('C1');
+		ticTacToe.play('C2');
+		ticTacToe.play('C3');
+		expect(ticTacToe.isTheGameIsFinished()).toBeTruthy();
+		expect(ticTacToe.isPlayerWinner('X')).toBeFalsy();
+		expect(ticTacToe.isPlayerWinner('O')).toBeFalsy();
+	});
 });
