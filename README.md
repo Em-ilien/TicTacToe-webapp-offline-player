@@ -12,7 +12,7 @@ TicTacToeTDD (https://github.com/Em-ilien/TicTacToeTDD)
 
 (c) Emilien Cosson
 
-See lincence at LICENCE file
+See licence at LICENCE file
 
 ## Installing
 
