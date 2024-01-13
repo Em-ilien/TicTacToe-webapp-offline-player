@@ -12,7 +12,7 @@ TicTacToeTDD (https://github.com/Em-ilien/TicTacToeTDD)
 
 (c) Emilien Cosson
 
-See lincence at LICENCE file
+See licence at LICENCE file
 
 ## Installing
 
@@ -22,6 +22,16 @@ git clone https://github.com/Em-ilien/TicTacToe-webapp-offline-player.git
 cd TicTacToe-webapp-offline-player
 
 npm i
+```
 
+## Running
+
+```bash
 npm run dev
+```
+
+## Testing
+
+```bash
+npm run test
 ```
